@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+  <head>
+    {{> layout/meta}}
+  </head>
+  <body>
+    {{> layout/header}}
+    <main class="bg-gray-300">
+      <section>{{> tools/about/about-kv}}</section>
+      <section class="py-16">{{> tools/about/txt-area}}</section>
+      <section class="py-16">{{> tools/about/grid}}</section>
+      <section class="py-16">{{> tools/about/txt-area}}</section>
+    </main>
+    {{> layout/footer}}
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

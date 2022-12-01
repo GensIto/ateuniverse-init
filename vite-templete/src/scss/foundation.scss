@@ -1,0 +1,96 @@
+/* tailwind cssの提供があるが 個人的なrest.css追記 */
+
+* {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: calc(1000vw / 375);
+}
+
+@media print, screen and (min-width: 620px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media print, screen and (min-width: 1600px) {
+  html {
+    /* 1600pxから、100pxごとに1px大きくなる */
+    font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
+
+    /*  デフォルト font-size: calc(1000vw / 1920); */
+  }
+}
+
+/* loadingに依存しているstyleどこに書くか迷ってとりあえずここに書いています */
+html.is-load {
+  overflow: hidden;
+}
+
+/* ハンバーガーに依存しているstyleどこに書くか迷ってとりあえずここに書いています */
+html.gnav-open {
+  overflow: hidden;
+}
+
+body {
+  @apply text-base text-txt;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-feature-settings: 'palt';
+  font-kerning: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  line-break: strict;
+}
+
+html.is-load > body {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media print, screen and (min-width: 768px) {
+  body {
+    min-width: 1024px;
+  }
+}
+
+/* safariでも100vh
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: fill-available;
+  }
+}
+*/
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+p {
+  span {
+    color: red;
+  }
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(10px);
+}
+
+.js-scroll.js-active {
+  opacity: 1;
+  transition: 1s;
+  transform: translateY(0);
+}

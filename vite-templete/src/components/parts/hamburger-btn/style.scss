@@ -1,0 +1,46 @@
+/* ****************************************************************************************************
+
+ # line
+
+**************************************************************************************************** */
+.p-hamburger__line {
+  transition: 1s;
+  @apply absolute  h-px w-full bg-white;
+
+  &:nth-child(1) {
+    transition: 1s;
+    @apply top-0;
+  }
+
+  &:nth-child(2) {
+    transition: 1s;
+    @apply top-2/4;
+  }
+
+  &:nth-child(3) {
+    transition: 1s;
+    @apply bottom-0;
+  }
+}
+
+#js-hamburger.js-active {
+  .p-hamburger__line {
+    &:nth-child(1) {
+      transition: 1s;
+      transform: rotate(25deg);
+      @apply top-2/4;
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      transition: 1s;
+      transform: translateX(100%);
+    }
+
+    &:nth-child(3) {
+      transition: 1s;
+      transform: rotate(-25deg);
+      @apply top-2/4;
+    }
+  }
+}

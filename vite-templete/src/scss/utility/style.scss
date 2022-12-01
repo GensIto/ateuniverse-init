@@ -1,0 +1,72 @@
+/* ****************************************************************************************************
+
+ # 矢印
+
+**************************************************************************************************** */
+.u-arrow-top {
+  &::before {
+    @apply absolute top-1/2 block h-4 w-4 border-black;
+    right: 50%;
+    content: '';
+    border-top: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+}
+
+.u-arrow-right {
+  &::before {
+    @apply absolute top-1/2 block h-4 w-4 border-black;
+    right: 50%;
+    content: '';
+    border-top: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}
+
+.u-arrow-bottom {
+  &::before {
+    @apply absolute top-1/2 block h-4 w-4 border-black;
+    right: 50%;
+    content: '';
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}
+
+.u-arrow-left {
+  &::before {
+    @apply absolute top-1/2 block h-4 w-4 border-black;
+    right: 50%;
+    content: '';
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}
+
+/* ****************************************************************************************************
+
+ # position center
+
+**************************************************************************************************** */
+.u-position-center {
+  @apply absolute top-1/2 left-1/2 block -translate-x-1/2 -translate-y-1/2;
+}
+
+/* ****************************************************************************************************
+
+# text decoration
+
+**************************************************************************************************** */
+
+.u-txt-bottom-line {
+  @apply relative w-fit;
+
+  &::after {
+    @apply absolute -bottom-4 left-1/2 h-1 w-12 -translate-x-1/2 rounded-lg bg-black;
+    content: '';
+  }
+}

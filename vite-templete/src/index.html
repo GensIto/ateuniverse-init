@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" class="is-load">
+  <head>
+    {{> layout/meta}}
+  </head>
+  <body>
+    {{> layout/header}}
+    <main class="bg-gray-300">
+      <section class="">{{> tools/home/kv}}</section>
+      <section class="py-16">{{> tools/home/pickup}}</section>
+      <section class="py-16">{{> tools/home/card}}</section>
+    </main>
+    {{> layout/footer}} {{> layout/loading}}
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

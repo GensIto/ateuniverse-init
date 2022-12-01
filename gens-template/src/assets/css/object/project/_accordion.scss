@@ -1,0 +1,107 @@
+/* ****************************************************************************************************
+
+  # accordion
+  - project
+
+**************************************************************************************************** */
+@use '../../foundation/tool/global';
+
+.p-accordion {
+  position: relative;
+  display: block;
+}
+// @media print, screen and (min-width: global.$breakpoint-min-md) {
+// }
+
+/* ======================================================================
+
+  ## head
+
+====================================================================== */
+.p-accordion__head {
+  position: relative;
+  padding: 0 1.2rem 0 0;
+  cursor: pointer;
+  // ▼triangle
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    content: '';
+    background-color: transparent;
+    border-right: .1rem solid global.$color-black;
+    border-bottom: .1rem solid global.$color-black;
+    transition: transform global.$transition-duration
+      global.$transition-timing-function;
+    transform: translate(0, -50%) scale(.8, 1) rotate(45deg);
+  }
+}
+
+.p-accordion.is-open .p-accordion__head {
+  // ▼triangle
+  &::before {
+    transform: translate(0, -50%) scale(.8, 1) rotate(-135deg);
+  }
+}
+@media print, screen and (min-width: global.$breakpoint-min-md) {
+  .p-accordion__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    // ▼triangle
+    &::before {
+      top: 44%;
+      width: .8rem;
+      height: .8rem;
+    }
+  }
+}
+
+/* ======================================================================
+
+  ## title
+
+====================================================================== */
+.p-accordion__title {
+  font-size: global.$font-size-md;
+  font-weight: global.$font-weight-bold;
+  color: global.$color-black;
+}
+@media print, screen and (min-width: global.$breakpoint-min-md) {
+  .p-accordion__title {
+    width: 100%;
+    font-size: global.$font-size-md-mq-min-md;
+  }
+}
+
+/* ======================================================================
+
+  ## body
+
+====================================================================== */
+.p-accordion.is-open > .p-accordion__body {
+  padding-top: 1.1rem;
+}
+@media print, screen and (min-width: global.$breakpoint-min-md) {
+  .p-accordion.is-open > .p-accordion__body {
+    padding-top: 1.6rem;
+  }
+}
+
+/* ======================================================================
+
+  ## txt
+
+====================================================================== */
+.p-accordion__txt {
+  font-size: global.$font-size;
+  line-height: 1.5;
+}
+@media print, screen and (min-width: global.$breakpoint-min-md) {
+  .p-accordion__txt {
+    font-size: global.$font-size-mq-min-md;
+  }
+}

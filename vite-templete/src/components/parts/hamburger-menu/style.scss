@@ -1,0 +1,22 @@
+/* ****************************************************************************************************
+
+ # menu
+
+**************************************************************************************************** */
+
+.p-hamburger__menu {
+  width: 40%;
+  transition: 1s;
+  transform: translateX(120%);
+  @apply absolute right-0 top-0 z-10  w-2/3 text-base  text-white md:w-2/5;
+}
+
+.p-hamburger__menu.js-active {
+  display: block;
+  transition: 1s;
+  transform: translateX(0%);
+}
+
+.p-hamburger__menu__list {
+  background-color: rgba($color: #000, $alpha: 0.7);
+}
