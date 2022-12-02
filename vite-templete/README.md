@@ -26,6 +26,7 @@ figmaとの相性もいいらしい?ソフトウェア開発っぽくなりま�
 - [アニメーション生成ツール参考記事](https://zenn.dev/angelecho/articles/f171ca2b3b1f6a)
 - [.containerのカスタマイズ](https://www.memory-lovers.blog/entry/2022/10/14/120000)
 - [tailwin default config](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)こちらでカスタマイズできるものが確認できます
+- [tailwin design template](https://tailblocks.cc/)
 - [任意の値を入れる](https://runebook.dev/ja/docs/tailwindcss/adding-custom-styles)
 - [tailwind css 3(日本語訳)](https://runebook.dev/ja/docs/tailwindcss/-index-)
 - [tailwind css grid generator](https://www.tailwind-tools.com/grid)
@@ -219,9 +220,14 @@ flocss設計の方がいいんですかね~
 - [htpasswd生成](https://www.luft.co.jp/cgi/htpasswd.php)
 - [javascript lesson](https://bigfrontend.dev/ja)
 - [javascript news](https://jser.info/)
+- [font size 可変](https://min-max-calculator.9elements.com/)
+- [ウニョウニョ動く円](https://blobanimation.com/)
+- [ヘッダーレイアウト](https://headers-css.vercel.app/)
+- [背景レイアウト](https://www.magicpattern.design/tools/css-backgrounds)
+- [画質を保ったまま大きくする](https://icons8.com/upscaler)
+- [cssのみでicon <- これやばすぎます](https://css.gg/app)
 
 僕が使っていたものです~
-
 ### husky
 gitなどでコードを管理する時に便利でコードの品質を担保したり,コードレビューの負担を減らせたりするものです
 このプロジェクトではcommit時に以下のものが走ります。
