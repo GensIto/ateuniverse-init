@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     //? ここの中は上書きのイメージ
     fontSize: {
-      xs: '1.4rem', //! 14px
-      sm: '1.6rem', //! 16px
-      base: '1.8rem', //! 18px
-      lg: '2rem', //! 20px
-      xl: '2.2rem' //! 22px
+      xxs: '1rem', //! 10px
+      xs: '1.2rem', //! 12px
+      sm: '1.4rem', //! 14px
+      base: '1.6em', //! 16px
+      lg: '1.8rem', //! 18px
+      xl: '2rem', //! 20px
+      xxl: '2.2rem' //! 22px
     },
     container: {
       center: true //? 中央寄せにする
